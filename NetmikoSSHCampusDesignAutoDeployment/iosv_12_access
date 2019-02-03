@@ -1,0 +1,10 @@
+vlan 2
+int range fas 1/15
+switchport mode access
+switchport access vlan 2
+int range fas 1/0 - 3
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,2,100,101,1002-1005
+!spanning-tree link-type point-to-point
+
